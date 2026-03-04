@@ -369,10 +369,6 @@ section{
     margin-top: 40px;
 }
 
-.feature {
-    /* width: calc(100% / 3); */
-}
-
 .feature__row {
     display: flex;
     align-items: flex-start;
