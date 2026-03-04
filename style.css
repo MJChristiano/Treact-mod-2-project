@@ -125,17 +125,23 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    height: 378px;
-    margin: 24px 16px;
-    padding: 32px;
-    background-color: #fff;
-    border: 1px solid rgb(229, 231, 235);
-    border-radius: 8px;
-    z-index: 4;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
     visibility: hidden;
     opacity: 0;
-    transform: translateX(300%);
     transition: all 300ms ease;
+}
+
+.modal__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 80px 32px 32px;
+    transform: translateY(-100%);
+    transition: transform 300ms ease;
 }
 
 .modal__links {
@@ -144,6 +150,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 
 .modal__link {
@@ -167,13 +175,22 @@ nav {
 .menu--open .modal {
     visibility: visible;
     opacity: 1;
-    transform: translateX(0);
+}
+
+.menu--open .modal__content {
+    transform: translateY(0);
 }
 
 .btn__menu--close {
-    position: fixed;
+    position: absolute;
     top: 24px;
-    right: 18px;
+    right: 24px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #1a202c;
+    cursor: pointer;
+    z-index: 1001;
 }
 
 
@@ -1249,6 +1266,11 @@ MOBILE RESPONSIVENESS ↓
     
     .section__title {
         font-size: 32px;
+        text-align: center;
+    }
+    
+    .section__tag {
+        text-align: center;
     }
     
     .header__description--para {
@@ -1274,6 +1296,7 @@ MOBILE RESPONSIVENESS ↓
     .testimonials__description {
         width: 100%;
         margin-bottom: 48px;
+        text-align: center;
     }
     
     .quality__img--wrapper,
@@ -1282,6 +1305,14 @@ MOBILE RESPONSIVENESS ↓
     .testimonials__img {
         width: 100%;
         max-width: 300px;
+    }
+    
+    .section__para {
+        text-align: center;
+    }
+    
+    .value {
+        text-align: center;
     }
     
     .plans {
@@ -1324,6 +1355,11 @@ MOBILE RESPONSIVENESS ↓
     
     .section__title {
         font-size: 28px;
+        text-align: center;
+    }
+    
+    .section__tag {
+        text-align: center;
     }
     
     .nav__logo--title {
