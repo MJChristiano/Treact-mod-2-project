@@ -1110,20 +1110,19 @@ FOOTER ↓
 
 
 footer {
-    background-color: #6415ff;
-    padding: 96px 32px 32px;
-    color: #fff;
+    padding: 96px 32px;
+    background-color: rgb(100, 21, 255);
+    margin-bottom: -32px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+    color: #243e63
 }
 
-.footer__bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .container{
+.row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -1132,6 +1131,11 @@ footer .container{
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
     gap: 48px;
     margin-bottom: 64px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column:first-child {
@@ -1153,6 +1157,12 @@ footer .container{
     font-size: 14px;
     line-height: 2;
     transition: color 300ms ease;
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer__column--link:hover {
