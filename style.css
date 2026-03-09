@@ -376,6 +376,16 @@ section{
     text-transform: uppercase;
 }
 
+/* Center the features section title/subtitle */
+#features + .container > .row__narrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
 #features .section__tag {
     text-align: center;
     width: 100%;
