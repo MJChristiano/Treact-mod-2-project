@@ -249,6 +249,7 @@ p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 0 auto;
 }
 
 .header__email--input {
@@ -450,7 +451,7 @@ section{
     padding: 20px;
     border: 1px solid #e5e7eb;
     border-radius: 500px;
-    margin-right: 20px;
+    margin-right: 0;
 }
 
 .feature__img {
@@ -1214,6 +1215,7 @@ section {
     align-items: center;
     gap: 16px;
     margin-bottom: 32px;
+    flex-direction: column;
 }
 
 .testimonial__profile--img {
@@ -1303,7 +1305,8 @@ START / CALL TO ACTION ↓
 
 .start__title {
     color: #f7fafc;
-    font-size: 30px;
+    font-size: 24px;
+    text-align: center;
     font-weight: 700;
     line-height: 1.5;
     z-index: 2;
@@ -1377,6 +1380,7 @@ section {
     align-items: center;
     /* reduce separation between the heading and the button group */
     gap: 48px;
+    flex-direction: column;
 }
 
 /* 
@@ -1411,6 +1415,14 @@ footer {
         margin-bottom: 64px;
         width: 100%;
         align-items: flex-start;
+        justify-content: center;
+
+.footer__column {
+    min-width: 150px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;       
 }
 
 @media (max-width: 1024px) {
