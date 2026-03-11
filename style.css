@@ -1684,6 +1684,26 @@ MOBILE RESPONSIVENESS ↓
         width: 100%;
         max-width: 280px;
     }
+
+    .step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .step__number {
+        margin-right: 0;
+    }
+
+    .values__list {
+        flex-direction: column;        
+    }
+
+    .value {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media(max-width: 640px) {
